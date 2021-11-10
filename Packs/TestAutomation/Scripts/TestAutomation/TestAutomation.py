@@ -7,7 +7,7 @@ def main():
     try:
         demisto.executeCommand("setIncident", {
             'id': 1255, 'details': "this message"
-            })
+        })
     except Exception as ex:
         demisto.error(traceback.format_exc())
         return_error("Failed to executeCommand setIncident", error=ex)
